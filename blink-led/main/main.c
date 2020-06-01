@@ -17,11 +17,7 @@
 
 void app_main(void)
 {
-  nvs_flash_init();
-    xTaskCreate(&blinky, "blinky", 512,NULL,5,NULL );
-}
-void blinky(void *pvParameter)
-{
+
  
     gpio_pad_select_gpio(BLINK_GPIO);
     /* Set the GPIO as a push/pull output */
